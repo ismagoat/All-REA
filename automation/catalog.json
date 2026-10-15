@@ -1,0 +1,105 @@
+{
+  "featured_limit": 11,
+  "candidates_limit": 15,
+  "search_results_per_query": 25,
+  "readme_checks_per_run": 18,
+  "search_queries": [
+    "\"morluto/rea\" in:readme fork:false archived:false",
+    "\"Reverse Engineer Anything\" in:readme fork:false archived:false",
+    "\"rea\" \"Ghidra\" in:readme fork:false archived:false",
+    "rea in:name,description created:>=2026-10-01 fork:false archived:false"
+  ],
+  "excluded_repositories": [
+    "mytechnotalent/rea"
+  ],
+  "featured": [
+    {
+      "repo": "morluto/rea",
+      "title": "Reverse Engineer Anything",
+      "utility": "Inspect binaries and application behavior with AI coding agents",
+      "category": "Developer tool",
+      "relation": "Original REA",
+      "priority": 6
+    },
+    {
+      "repo": "storytold/photocraft",
+      "title": "PhotoCraft",
+      "utility": "Edit images with a Photoshop-inspired Rust application",
+      "category": "Image editor · early-stage",
+      "relation": "Other AI project",
+      "priority": 5
+    },
+    {
+      "repo": "storytold/artcraft",
+      "title": "ArtCraft",
+      "utility": "Explore an integrated creative environment",
+      "category": "Creative studio",
+      "relation": "Other AI project",
+      "priority": 5
+    },
+    {
+      "repo": "Xiangyu-CAS/rea-capcut",
+      "title": "ReaCut",
+      "utility": "Edit video with a CapCut-inspired open-source app",
+      "category": "Video editor · early-stage",
+      "relation": "Uses REA",
+      "priority": 5
+    },
+    {
+      "repo": "B-Howell/soundconnect-desktop",
+      "title": "SoundConnect Desktop",
+      "utility": "Control compatible Sony headphones from Windows",
+      "category": "Hardware utility",
+      "relation": "REA tested",
+      "priority": 5
+    },
+    {
+      "repo": "storytold/wordcraft",
+      "title": "WordCraft",
+      "utility": "Work with Word-style documents",
+      "category": "Office · early-stage",
+      "relation": "Other AI project",
+      "priority": 4
+    },
+    {
+      "repo": "storytold/gridcraft",
+      "title": "GridCraft",
+      "utility": "Explore an Excel-style spreadsheet editor",
+      "category": "Office · early-stage",
+      "relation": "Other AI project",
+      "priority": 4
+    },
+    {
+      "repo": "storytold/deckcraft",
+      "title": "DeckCraft",
+      "utility": "Create slides in a PowerPoint-inspired editor",
+      "category": "Office · early-stage",
+      "relation": "Other AI project",
+      "priority": 4
+    },
+    {
+      "repo": "lxistired/ledger-reborn",
+      "title": "Ledger Reborn",
+      "utility": "Try a local accounting app for invoices and reports",
+      "category": "Accounting · preview",
+      "relation": "Uses REA",
+      "priority": 4
+    },
+    {
+      "repo": "andy778/ananasar",
+      "title": "Ananasar",
+      "utility": "Use a Rust Modbus/TCP client and server",
+      "category": "Networking / Modbus",
+      "relation": "Uses REA",
+      "priority": 4
+    },
+    {
+      "repo": "ShadowSwaps/REA-Reconstruction-Companion",
+      "title": "REA Reconstruction Companion",
+      "utility": "Turn evidence into implementation plans and validation steps",
+      "category": "Developer skill",
+      "relation": "REA ecosystem",
+      "priority": 4
+    }
+  ]
+}

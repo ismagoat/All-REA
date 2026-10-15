@@ -1,0 +1,49 @@
+name: Discover and refresh All-REA
+
+on:
+  schedule:
+    # Daily at 06:37 UTC. Schedules may run a little late.
+    - cron: '37 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: all-rea-auto-update
+  cancel-in-progress: false
+
+jobs:
+  update-directory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check automation tests
+        run: python -m unittest discover -s tests -v
+      - name: Refresh curated tools and find new candidates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python automation/update_catalog.py
+      - name: Propose README updates for review
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/update-directory
+          delete-branch: true
+          commit-message: 'docs: update featured tools and discovery queue'
+          title: 'chore: update All-REA directory'
+          body: |
+            Automated directory refresh.
+
+            - Reordered curated featured projects using their editorial priority and current GitHub stars.
+            - Proposed new REA-related repositories found through GitHub search.
+            - **Discovery candidates are NOT verified REA builds.** Please inspect the repository and its README before merging.
+            - Manually maintained sections are preserved.
+          add-paths: |
+            README.md
+            automation/candidates.json
