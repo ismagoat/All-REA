@@ -1,138 +1,161 @@
 # All-REA
 
-**A curated directory of open-source reverse-engineering projects, REA experiments, and AI-assisted software reconstructions.**
+### Discover the tools worth trying from the AI reverse-engineering wave.
+
+**A utility-first directory of open-source apps, developer tools, and software reconstructions.** Find something useful, jump to its repository, and see whether it actually uses [Reverse Engineer Anything (REA)](https://github.com/morluto/rea).
 
 [![GitHub stars](https://img.shields.io/github/stars/ismagoat/All-REA?style=flat-square)](https://github.com/ismagoat/All-REA/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/ismagoat/All-REA?style=flat-square)](https://github.com/ismagoat/All-REA/commits/main)
+![Directory](https://img.shields.io/badge/directory-utility--first-blue?style=flat-square)
 
-**All-REA** helps you discover what people are building with [Reverse Engineer Anything (REA)](https://github.com/morluto/rea) and related AI reverse-engineering workflows. The focus is on **public GitHub repositories with code**, not just announcements.
+> [!IMPORTANT]
+> **Not everything in this list was built with REA.** We also track the wider wave of AI-assisted, clean-room alternatives. Every entry is labeled. **Experimental software is not necessarily a practical replacement** for its commercial inspiration.
 
-> **Important:** Not every project below uses REA. To avoid confusing unrelated work with the original tool, entries are separated into REA projects, ecosystem tools, other AI-assisted reconstructions, and community indexes. Descriptions summarize the authors' public documentation; results have not been independently reproduced.
+**Updated:** October 15, 2026 · **Language:** English · **Independent community project**
 
-**Last manually curated:** October 15, 2026 · **Language:** English · **Status:** Growing
+## 🔥 Featured: tools to check out first
 
-## Contents
+**Picked for practical use, public interest, or their importance to the ecosystem.** This is an editorial selection, **not a live popularity or quality ranking**. Star badges update automatically.
 
-- [Projects using or testing REA](#projects-using-or-testing-rea)
-- [REA analysis and research](#rea-analysis-and-research)
-- [REA ecosystem and developer tools](#rea-ecosystem-and-developer-tools)
-- [Other AI-assisted reconstruction projects](#other-ai-assisted-reconstruction-projects)
-- [Community lists and resources](#community-lists-and-resources)
-- [Contributing](#contributing)
+| Project | Why you might want it | Category | REA connection | Popularity |
+| --- | --- | --- | --- | --- |
+| **[Reverse Engineer Anything](https://github.com/morluto/rea)** | Inspect binaries and application behavior with an AI coding agent | Developer tool | **Original REA** | ![Stars](https://img.shields.io/github/stars/morluto/rea?style=flat-square) |
+| **[PhotoCraft](https://github.com/storytold/photocraft)** | Edit images with a Rust-based, Photoshop-inspired app | Image editing · early-stage | **Other AI project** | ![Stars](https://img.shields.io/github/stars/storytold/photocraft?style=flat-square) |
+| **[ArtCraft](https://github.com/storytold/artcraft)** | Explore a creative environment for images, video, and visual workflows | Creative studio | **Other AI project** | ![Stars](https://img.shields.io/github/stars/storytold/artcraft?style=flat-square) |
+| **[ReaCut](https://github.com/Xiangyu-CAS/rea-capcut)** | Try an independent video editor inspired by CapCut / Jianying | Video editing · early-stage | **Uses REA** | ![Stars](https://img.shields.io/github/stars/Xiangyu-CAS/rea-capcut?style=flat-square) |
+| **[SoundConnect Desktop](https://github.com/B-Howell/soundconnect-desktop)** | Control supported Sony headphones from Windows | Device utility | **REA tested** | ![Stars](https://img.shields.io/github/stars/B-Howell/soundconnect-desktop?style=flat-square) |
+| **[Ledger Reborn](https://github.com/lxistired/ledger-reborn)** | Experiment with local invoicing, bookkeeping, and reports | Accounting · preview | **Uses REA** | ![Stars](https://img.shields.io/github/stars/lxistired/ledger-reborn?style=flat-square) |
+| **[Ananasar](https://github.com/andy778/ananasar)** | Work with Modbus/TCP using a Rust client and server | Networking / industrial protocols | **Uses REA** | ![Stars](https://img.shields.io/github/stars/andy778/ananasar?style=flat-square) |
+| **[REA Reconstruction Companion](https://github.com/ShadowSwaps/REA-Reconstruction-Companion)** | Turn REA findings into implementation plans and validation workflows | Developer skill | **REA ecosystem** | ![Stars](https://img.shields.io/github/stars/ShadowSwaps/REA-Reconstruction-Companion?style=flat-square) |
 
-## Projects using or testing REA
+### Find something useful, fast
 
-These repositories **explicitly mention using or evaluating REA** in their project documentation. They may be early prototypes, partial reconstructions, or independent implementations rather than exact copies of the original software.
+| I want to… | Start with |
+| --- | --- |
+| **Analyze an existing application** | [REA](https://github.com/morluto/rea), [REA Engine](https://github.com/0xHavoc/rea-engine), [hexvero](https://github.com/maximilianfeix/hexvero) |
+| **Edit photos or images** | [PhotoCraft](https://github.com/storytold/photocraft), [LightCraft](https://github.com/storytold/lightcraft) |
+| **Edit videos** | [ReaCut](https://github.com/Xiangyu-CAS/rea-capcut), [FilmCraft](https://github.com/storytold/filmcraft) |
+| **Create documents, sheets, slides** | [WordCraft](https://github.com/storytold/wordcraft), [GridCraft](https://github.com/storytold/gridcraft), [DeckCraft](https://github.com/storytold/deckcraft) |
+| **Control hardware or test a network protocol** | [SoundConnect Desktop](https://github.com/B-Howell/soundconnect-desktop), [Ananasar](https://github.com/andy778/ananasar) |
+| **Work on a reverse-engineering project with AI** | [REA Reconstruction Companion](https://github.com/ShadowSwaps/REA-Reconstruction-Companion), [rea-casebook](https://github.com/pablodiazjorge/rea-casebook) |
+| **Study game reconstruction** | [DX-Ball](https://github.com/N0zoM1z0/dx-ball), [Snowball War](https://github.com/tuunanet/rea-ski-or-die-reconstruction) |
 
-| Project | Original target / purpose | What it does | REA relationship |
+## 📦 Applications and practical software
+
+### Actually using or testing REA
+
+These projects **explicitly acknowledge REA**. They are independent implementations, experiments, or utilities; they are not necessarily feature-complete equivalents to their reference apps.
+
+| Application | Use case | Original reference | Project status / notes | Code & releases |
+| --- | --- | --- | --- | --- |
+| **ReaCut** | Video editing | CapCut / Jianying | **Early development**; macOS Apple Silicon is the verified platform listed by its author | [Source](https://github.com/Xiangyu-CAS/rea-capcut) · [Releases](https://github.com/Xiangyu-CAS/rea-capcut/releases) |
+| **SoundConnect Desktop** | Sony headphone controls: EQ, noise cancellation, battery, etc. | Sony Sound Connect | **Windows desktop app**; REA was used to test / review the project, not necessarily build every feature | [Source](https://github.com/B-Howell/soundconnect-desktop) · [Releases](https://github.com/B-Howell/soundconnect-desktop/releases) |
+| **Ledger Reborn** | Accounting, invoices, payments, stock and reports | QuickBooks Desktop for Mac | **Preview**; does not reproduce all QuickBooks features | [Source](https://github.com/lxistired/ledger-reborn) · [Releases](https://github.com/lxistired/ledger-reborn/releases) |
+| **Ananasar** | Modbus/TCP client and server | Ananas | Rust implementation; author credits REA in the port | [Source](https://github.com/andy778/ananasar) · [Releases](https://github.com/andy778/ananasar/releases) |
+
+**Evidence:** The authors' READMEs document REA usage for [ReaCut](https://github.com/Xiangyu-CAS/rea-capcut), [Ledger Reborn](https://github.com/lxistired/ledger-reborn), and [Ananasar](https://github.com/andy778/ananasar). [SoundConnect Desktop](https://github.com/B-Howell/soundconnect-desktop) documents REA as a test and review tool.
+
+### Trending AI-built apps — REA **not confirmed**
+
+These applications belong to the **broader AI software-recreation wave**, not the confirmed REA project list. Most are **early-stage**, and familiar interfaces do not imply commercial feature parity.
+
+**Creative tools**
+
+| Application | What you can do | Inspired by | Source |
 | --- | --- | --- | --- |
-| [DX-Ball reconstruction](https://github.com/N0zoM1z0/dx-ball) | DX-Ball 1.07 | Reconstructs the classic Windows game as readable C/C++ with Ghidra-assisted, function-by-function comparisons. | **Used** |
-| [Snowball War](https://github.com/tuunanet/rea-ski-or-die-reconstruction) | *Ski or Die* (DOS) | Rebuilds the Snowball War minigame in Rust and SDL2. | **Used** |
-| [ReaCut](https://github.com/Xiangyu-CAS/rea-capcut) | CapCut / Jianying | Independently develops a video editor after examining application behavior and project formats. | **Used** |
-| [Ledger Reborn](https://github.com/lxistired/ledger-reborn) | QuickBooks Desktop for Mac | Develops an independent desktop accounting application with a SQLite-backed ledger. | **Used** |
-| [Ananasar](https://github.com/andy778/ananasar) | Ananas Modbus/TCP tool | Ports the functionality of a Modbus/TCP client/server tool to Rust. | **Used** |
-| [SoundConnect Desktop](https://github.com/B-Howell/soundconnect-desktop) | Sony headphones / Sound Connect | Windows desktop controls for compatible Sony headphones; documentation describes using REA to evaluate and review the project. | **Tested** |
+| **PhotoCraft** | Photo and image editing | Photoshop | [GitHub](https://github.com/storytold/photocraft) |
+| **LightCraft** | Photo processing / library | Lightroom | [GitHub](https://github.com/storytold/lightcraft) |
+| **FilmCraft** | Video editing | Premiere Pro | [GitHub](https://github.com/storytold/filmcraft) |
+| **VectorCraft** | Vector graphics | Illustrator | [GitHub](https://github.com/storytold/vectorcraft) |
+| **PdfCraft** | PDF editing workflows | Acrobat | [GitHub](https://github.com/storytold/pdfcraft) |
+| **EffectCraft** | Motion graphics / visual effects | After Effects | [GitHub](https://github.com/storytold/effectcraft) |
+| **DesignCraft** | Page layouts and publishing | InDesign | [GitHub](https://github.com/storytold/designcraft) |
+| **FigCraft** | Interface and layout design | Figma | [GitHub](https://github.com/storytold/figcraft) |
+| **CADCraft** | Computer-aided design | AutoCAD-style CAD | [GitHub](https://github.com/storytold/cadcraft) |
+| **SoundCraft** | Audio production | Pro Tools-style DAW | [GitHub](https://github.com/storytold/soundcraft) |
 
-**Key:** **Used** = author credits REA in the development/research workflow. **Tested** = author reports using REA to inspect or evaluate the project, not necessarily to recreate the target.
+**Office and productivity tools**
 
-## REA analysis and research
+| Application | What you can do | Inspired by | Source |
+| --- | --- | --- | --- |
+| **WordCraft** | Write and format documents | Microsoft Word | [GitHub](https://github.com/storytold/wordcraft) |
+| **GridCraft** | Work with spreadsheets | Microsoft Excel | [GitHub](https://github.com/storytold/gridcraft) |
+| **DeckCraft** | Make presentations | Microsoft PowerPoint | [GitHub](https://github.com/storytold/deckcraft) |
 
-Projects that demonstrate or document binary analysis rather than delivering a full replacement application.
+**Also trending:** [ArtCraft](https://github.com/storytold/artcraft) — a related creative studio/engine. **These projects have their own development status and limitations; check the README, issues, and releases before relying on them.**
 
-| Project | Focus |
-| --- | --- |
-| [OpenBSD netcat REA](https://github.com/NullLabTests/OpenBSD_netcat_REA) | Evidence-backed static analysis of the Ubuntu netcat-openbsd binary with REA and Ghidra. |
-| [rea-lab](https://github.com/pablodiazjorge/rea-lab) | Windows test environment for measuring and visualizing REA + Ghidra workflows. |
-| [rea-research](https://github.com/ringozzt/rea-research) | Technical investigation of the REA architecture and workflow (primarily Chinese). |
-| [Touhou 4 / TH04 reconstruction](https://github.com/N0zoM1z0/th04) | Ongoing reconstruction of *Lotus Land Story* for PC-98. **REA usage not confirmed from the README**; included as related reconstruction work. |
+## 🧰 Developer tools — build, inspect, integrate
 
-## REA ecosystem and developer tools
+For users who want **tools they can use in their own reverse-engineering workflows**, rather than just finished application clones.
 
-These tools help with REA workflows, documentation, integrations, or adjacent forms of reverse engineering. **Being in this section does not imply that every tool depends on REA.**
-
-| Repository | Type | Description |
+| Tool | Why use it? | Connection to REA |
 | --- | --- | --- |
-| [morluto/rea](https://github.com/morluto/rea) | Original project | Reverse Engineer Anything: AI-agent access to reverse-engineering workflows through CLI/MCP interfaces. |
-| [rea-engine](https://github.com/0xHavoc/rea-engine) | Extension / fork | Adds investigation and reconstruction orchestration on top of REA. |
-| [REA Reconstruction Companion](https://github.com/ShadowSwaps/REA-Reconstruction-Companion) | Agent skill | Converts reverse-engineering evidence into specifications, plans, and validation steps. |
-| [dsh-plugin-rea](https://github.com/czcdr/dsh-plugin-rea) | Integration | Connects REA to DeepSeek Harness. |
-| [dsh-rea-mcp](https://github.com/sheilacraig/dsh-rea-mcp) | MCP bridge | A compact, configuration-based DeepSeek Harness to REA bridge. |
-| [rea-casebook](https://github.com/pablodiazjorge/rea-casebook) | Claude Code tool | Maintains a structured casebook of evidence collected through REA. |
-| [ReversePort](https://github.com/laaielichter/reverseport) | Related tool | Agent-oriented reverse-engineering and porting across applications, games, binaries, and websites. |
-| [hexvero](https://github.com/maximilianfeix/hexvero) | Related tool | Static analysis of binaries and app bundles; positions itself alongside, not as a dependency of, REA. |
-| [Guide REA en français](https://github.com/valorisa/Reverse-Engineer-Anything) | Documentation | Unofficial French-language guide to the original REA. |
+| **[REA](https://github.com/morluto/rea)** | Original CLI / MCP access to reverse-engineering capabilities for coding agents | **Original project** |
+| **[REA Engine](https://github.com/0xHavoc/rea-engine)** | Additional investigation and reconstruction orchestration | **Built on REA** |
+| **[REA Reconstruction Companion](https://github.com/ShadowSwaps/REA-Reconstruction-Companion)** | Transform binary-analysis findings into specs, architecture, and validation checklists | **Companion tool** |
+| **[ReversePort](https://github.com/laaielichter/reverseport)** | Analyze and port software across applications, games, and engines | **Related independent tool** |
+| **[hexvero](https://github.com/maximilianfeix/hexvero)** | Get initial static facts about binaries and app bundles | **Related independent tool** |
+| **[dsh-plugin-rea](https://github.com/czcdr/dsh-plugin-rea)** | Provision and connect REA to DeepSeek Harness | **Integration** |
+| **[dsh-rea-mcp](https://github.com/sheilacraig/dsh-rea-mcp)** | Wire DeepSeek Harness to REA's MCP server with a small config bridge | **Integration** |
+| **[rea-casebook](https://github.com/pablodiazjorge/rea-casebook)** | Keep a structured record of evidence during a Claude Code REA investigation | **Companion tool** |
 
-**Name collision:** [mytechnotalent/rea](https://github.com/mytechnotalent/rea) is a separate project named *Reverse Engineering Assistant*, **not** the original *Reverse Engineer Anything*.
+> **Different project, same acronym:** [mytechnotalent/rea](https://github.com/mytechnotalent/rea) is **Reverse Engineering Assistant**, *not* the original Reverse Engineer Anything.
 
-## Other AI-assisted reconstruction projects
+## 🎮 Games and reconstruction showcases
 
-This section covers the **broader wave of AI-assisted alternatives and recreations**. **REA usage is not claimed or verified for these repositories.** They are listed for discovery, not as REA success stories.
+These projects are especially useful for learning how reverse-engineering evidence becomes maintainable source code.
 
-### ArtCraft family
+| Project | Target | What makes it interesting | REA status |
+| --- | --- | --- | --- |
+| [DX-Ball reconstruction](https://github.com/N0zoM1z0/dx-ball) | DX-Ball 1.07 (Windows) | Recovers C/C++ functions and compares compiled behavior with the original | **Uses REA** |
+| [Snowball War reconstruction](https://github.com/tuunanet/rea-ski-or-die-reconstruction) | *Ski or Die* (DOS minigame) | Recreates Snowball War in Rust / SDL2 | **Uses REA** |
+| [Touhou 4 reconstruction](https://github.com/N0zoM1z0/th04) | *Lotus Land Story* (PC-98) | Rebuilds the historical game components | **REA usage not confirmed** |
 
-An independent family of open-source creative and productivity applications inspired by popular commercial tools.
+## 🔬 Research, demos and technical reports
 
-| Repository | Inspired by |
+| Repository | What you will find |
 | --- | --- |
-| [PhotoCraft](https://github.com/storytold/photocraft) | Adobe Photoshop |
-| [LightCraft](https://github.com/storytold/lightcraft) | Adobe Lightroom |
-| [FilmCraft](https://github.com/storytold/filmcraft) | Adobe Premiere Pro |
-| [VectorCraft](https://github.com/storytold/vectorcraft) | Adobe Illustrator |
-| [EffectCraft](https://github.com/storytold/effectcraft) | Adobe After Effects |
-| [DesignCraft](https://github.com/storytold/designcraft) | Adobe InDesign |
-| [PdfCraft](https://github.com/storytold/pdfcraft) | Adobe Acrobat |
-| [WordCraft](https://github.com/storytold/wordcraft) | Microsoft Word |
-| [GridCraft](https://github.com/storytold/gridcraft) | Microsoft Excel |
-| [DeckCraft](https://github.com/storytold/deckcraft) | Microsoft PowerPoint |
-| [CADCraft](https://github.com/storytold/cadcraft) | CAD software |
-| [FigCraft](https://github.com/storytold/figcraft) | Figma |
-| [SoundCraft](https://github.com/storytold/soundcraft) | Digital audio workstations |
+| [OpenBSD netcat REA](https://github.com/NullLabTests/OpenBSD_netcat_REA) | Static analysis of netcat-openbsd with REA and Ghidra, supported by artifacts |
+| [rea-lab](https://github.com/pablodiazjorge/rea-lab) | Windows REA/Ghidra experiments, measurements, and visualizations |
+| [rea-research](https://github.com/ringozzt/rea-research) | Detailed technical study of REA, mainly in Chinese |
+| [Reverse Engineer Anything — French guide](https://github.com/valorisa/Reverse-Engineer-Anything) | Unofficial French-language documentation |
 
-These are **inspired-by projects**, not guaranteed feature-equivalent replacements. Availability, maturity, and functionality vary.
+## 📚 More places to discover projects
 
-## Community lists and resources
-
-Further indexes may include case studies, discussions, related AI-assisted work, and projects without public source code. Their inclusion criteria are broader than those of All-REA.
-
-| Resource | Notes |
+| Collection | Best for |
 | --- | --- |
-| [Awesome REA Cases](https://github.com/songshikang0111/awesome-REA-cases) · [English index](https://github.com/songshikang0111/awesome-REA-cases/blob/main/INDEX.en.md) | Large, actively updated case collection; **includes non-REA AI-assisted reverse engineering**. |
-| [rea-gems](https://github.com/sqwu/rea-gems) | Community discovery index of REA-related repositories and cases. |
-| [awesome-rea](https://github.com/yibie/awesome-rea) | Additional REA resource collection. |
-| [rea-casebook](https://github.com/aliaihub/rea-casebook) | Additional curated REA examples and notes. |
-| [awesome-REA-cases](https://github.com/beyondchenlin/awesome-REA-cases) | Further community collection of REA cases. |
+| **[Awesome REA Cases](https://github.com/songshikang0111/awesome-REA-cases)** · [English index](https://github.com/songshikang0111/awesome-REA-cases/blob/main/INDEX.en.md) | A broad, frequently refreshed collection of REA and **non-REA** AI reverse-engineering cases |
+| [rea-gems](https://github.com/sqwu/rea-gems) | Community discovery of related projects and case studies |
+| [awesome-rea](https://github.com/yibie/awesome-rea) | Additional resources around REA |
+| [REA Casebook](https://github.com/aliaihub/rea-casebook) | Applied case studies with links and evidence |
+| [awesome-REA-cases](https://github.com/beyondchenlin/awesome-REA-cases) | Another community collection |
 
-## Contributing
+## 🤝 Contribute a useful tool
 
-Found a project that should be here? Contributions are welcome!
+**Priority: public, usable source code.** A practical application, library, or developer utility is more valuable to this directory than a viral post with no implementation.
 
-1. Check that the repository is public and the URL works.
-2. Open an [issue](https://github.com/ismagoat/All-REA/issues) or a pull request.
-3. Include the repository link, a one-sentence description, and a link to the evidence showing whether REA was used.
-4. Specify the correct category: **REA used**, **REA tested**, **REA ecosystem**, or **other AI-assisted work**.
-5. Mention if the project is a proof of concept, a work in progress, or actively maintained.
-
-For quick submissions, copy this template into an issue:
+To suggest something, open an [issue](https://github.com/ismagoat/All-REA/issues) or a pull request and provide:
 
 ```text
 Repository:
-Original software / target (if any):
-What the project does:
-REA relationship (used / tested / related / not used):
-Evidence URL:
-Status:
+What can someone actually do with it?
+Original app / target (if applicable):
+REA connection: original / used / tested / ecosystem / unrelated AI project
+Evidence for the REA connection:
+Platforms:
+Status: released / preview / experimental / unverified
 ```
 
-### Curation principles
+**Curation rules**
 
-- Prefer **code repositories** over social-media posts and unsupported claims.
-- Attribute claims to their authors; do **not** imply independent validation.
-- Avoid duplicates and distinguish forks from original implementations.
-- Clearly label projects **not using REA**.
-- Do not redistribute proprietary source code, commercial assets, credentials, or copyrighted game files.
+- Put **useful, accessible software first**; experiments and research go in later sections.
+- Be clear about **what works today**, supported platforms, and preview limitations.
+- Distinguish the **original REA**, projects that **used REA**, and **unrelated AI-built software**.
+- Prefer maintained code repositories with documentation and releases.
+- Avoid duplicates, misleading "fully recreated" claims, and unattributed copied code.
+- Do not distribute proprietary application source, assets, game files, or credentials.
+- Featured picks are editorial; badge star counts are live and do not constitute a quality assessment.
 
 ---
 
-**All-REA is an unofficial community directory.** It is not affiliated with, endorsed by, or maintained by the authors of REA or any of the applications mentioned. All trademarks belong to their respective owners. Each linked project has its own license and terms.
-
-Made for developers, researchers, and anyone curious about what AI-assisted reverse engineering can (and cannot yet) build.
+**Disclaimer:** All-REA is an unofficial, independently curated directory. It is not affiliated with the authors of REA or the products referenced above. Names and trademarks belong to their owners. Review each repository's license, maturity, and security before use.
