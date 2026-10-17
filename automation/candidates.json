@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "repo": "tijulkabir/rea-ctf",
+    "description": "No description supplied",
+    "stars_at_discovery": 0,
+    "first_seen": "2026-10-17",
+    "status": "Needs review — README mentions REA"
+  },
+  {
+    "repo": "NIU-123370/rea-workbench",
+    "description": "Local single-user software-archaeology workbench on REA 6.4.0 (V0.1)",
+    "stars_at_discovery": 0,
+    "first_seen": "2026-10-17",
+    "status": "Needs review — README mentions REA"
+  },
+  {
+    "repo": "gitpjc/rea_apk",
+    "description": "No description supplied",
+    "stars_at_discovery": 0,
+    "first_seen": "2026-10-17",
+    "status": "Needs review — README mentions REA"
+  },
+  {
+    "repo": "yinzh1024/oh-my-awesome",
+    "description": "My GitHub star navigation - auto-synced awesome-style README",
+    "stars_at_discovery": 0,
+    "first_seen": "2026-10-17",
+    "status": "Needs review — README mentions REA"
+  }
+]
