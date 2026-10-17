@@ -28,9 +28,9 @@
 | **[WordCraft](https://github.com/storytold/wordcraft)** | Work with Word-style documents | Office · early-stage | Other AI project | ![Stars](https://img.shields.io/github/stars/storytold/wordcraft?style=flat-square) |
 | **[GridCraft](https://github.com/storytold/gridcraft)** | Explore an Excel-style spreadsheet editor | Office · early-stage | Other AI project | ![Stars](https://img.shields.io/github/stars/storytold/gridcraft?style=flat-square) |
 | **[DeckCraft](https://github.com/storytold/deckcraft)** | Create slides in a PowerPoint-inspired editor | Office · early-stage | Other AI project | ![Stars](https://img.shields.io/github/stars/storytold/deckcraft?style=flat-square) |
+| **[REA Reconstruction Companion](https://github.com/ShadowSwaps/REA-Reconstruction-Companion)** | Turn evidence into implementation plans and validation steps | Developer skill | REA ecosystem | ![Stars](https://img.shields.io/github/stars/ShadowSwaps/REA-Reconstruction-Companion?style=flat-square) |
 | **[Ledger Reborn](https://github.com/lxistired/ledger-reborn)** | Try a local accounting app for invoices and reports | Accounting · preview | Uses REA | ![Stars](https://img.shields.io/github/stars/lxistired/ledger-reborn?style=flat-square) |
 | **[Ananasar](https://github.com/andy778/ananasar)** | Use a Rust Modbus/TCP client and server | Networking / Modbus | Uses REA | ![Stars](https://img.shields.io/github/stars/andy778/ananasar?style=flat-square) |
-| **[REA Reconstruction Companion](https://github.com/ShadowSwaps/REA-Reconstruction-Companion)** | Turn evidence into implementation plans and validation steps | Developer skill | REA ecosystem | ![Stars](https://img.shields.io/github/stars/ShadowSwaps/REA-Reconstruction-Companion?style=flat-square) |
 <!-- ALL-REA:FEATURED:END -->
 
 ### Find something useful, fast
@@ -48,7 +48,15 @@
 ## Newly discovered projects (review queue)
 
 <!-- ALL-REA:DISCOVERED:START -->
-No new candidates in the review queue.
+> [!CAUTION]
+> **Unverified discoveries.** The linked repositories mention REA, but this does **not** prove REA was used to build their software. Review their evidence, source, and license before recommending them.
+
+| Repository | What it claims to do | Discovered | Verification |
+| --- | --- | --- | --- |
+| [tijulkabir/rea-ctf](https://github.com/tijulkabir/rea-ctf) | No description supplied | 2026-10-17 | Needs review |
+| [NIU-123370/rea-workbench](https://github.com/NIU-123370/rea-workbench) | Local single-user software-archaeology workbench on REA 6.4.0 (V0.1) | 2026-10-17 | Needs review |
+| [gitpjc/rea_apk](https://github.com/gitpjc/rea_apk) | No description supplied | 2026-10-17 | Needs review |
+| [yinzh1024/oh-my-awesome](https://github.com/yinzh1024/oh-my-awesome) | My GitHub star navigation - auto-synced awesome-style README | 2026-10-17 | Needs review |
 <!-- ALL-REA:DISCOVERED:END -->
 
 ## Applications and practical software
