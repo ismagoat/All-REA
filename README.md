@@ -28,9 +28,9 @@
 | **[WordCraft](https://github.com/storytold/wordcraft)** | Work with Word-style documents | Office · early-stage | Other AI project | ![Stars](https://img.shields.io/github/stars/storytold/wordcraft?style=flat-square) |
 | **[GridCraft](https://github.com/storytold/gridcraft)** | Explore an Excel-style spreadsheet editor | Office · early-stage | Other AI project | ![Stars](https://img.shields.io/github/stars/storytold/gridcraft?style=flat-square) |
 | **[DeckCraft](https://github.com/storytold/deckcraft)** | Create slides in a PowerPoint-inspired editor | Office · early-stage | Other AI project | ![Stars](https://img.shields.io/github/stars/storytold/deckcraft?style=flat-square) |
+| **[REA Reconstruction Companion](https://github.com/ShadowSwaps/REA-Reconstruction-Companion)** | Turn evidence into implementation plans and validation steps | Developer skill | REA ecosystem | ![Stars](https://img.shields.io/github/stars/ShadowSwaps/REA-Reconstruction-Companion?style=flat-square) |
 | **[Ledger Reborn](https://github.com/lxistired/ledger-reborn)** | Try a local accounting app for invoices and reports | Accounting · preview | Uses REA | ![Stars](https://img.shields.io/github/stars/lxistired/ledger-reborn?style=flat-square) |
 | **[Ananasar](https://github.com/andy778/ananasar)** | Use a Rust Modbus/TCP client and server | Networking / Modbus | Uses REA | ![Stars](https://img.shields.io/github/stars/andy778/ananasar?style=flat-square) |
-| **[REA Reconstruction Companion](https://github.com/ShadowSwaps/REA-Reconstruction-Companion)** | Turn evidence into implementation plans and validation steps | Developer skill | REA ecosystem | ![Stars](https://img.shields.io/github/stars/ShadowSwaps/REA-Reconstruction-Companion?style=flat-square) |
 <!-- ALL-REA:FEATURED:END -->
 
 ### Find something useful, fast
@@ -48,7 +48,19 @@
 ## Newly discovered projects (review queue)
 
 <!-- ALL-REA:DISCOVERED:START -->
-No new candidates in the review queue.
+> [!CAUTION]
+> **Unverified discoveries.** The linked repositories mention REA, but this does **not** prove REA was used to build their software. Review their evidence, source, and license before recommending them.
+
+| Repository | What it claims to do | Discovered | Verification |
+| --- | --- | --- | --- |
+| [8rulerstar/8rulerstar](https://github.com/8rulerstar/8rulerstar) | Profile README | 2026-10-24 | Needs review |
+| [yinzh1024/oh-my-awesome](https://github.com/yinzh1024/oh-my-awesome) | My GitHub star navigation - auto-synced awesome-style README | 2026-10-24 | Needs review |
+| [sujinaero-sys/rea-linux-lab](https://github.com/sujinaero-sys/rea-linux-lab) | Linux-based REA development environment integrating Ubuntu, Ghidra, and automated reverse-engineering workflows. Focused on L | 2026-10-24 | Needs review |
+| [ghostlucius/ghostlucius](https://github.com/ghostlucius/ghostlucius) | No description supplied | 2026-10-24 | Needs review |
+| [tedico/trending-repos](https://github.com/tedico/trending-repos) | The top 100 GitHub repositories by stars gained in the last seven days, refreshed daily. Public GitHub metadata only. By Rue | 2026-10-24 | Needs review |
+| [enhansome/enhansome-claude-code-skills-zh](https://github.com/enhansome/enhansome-claude-code-skills-zh) | No description supplied | 2026-10-24 | Needs review |
+| [abhi765406/REA](https://github.com/abhi765406/REA) | No description supplied | 2026-10-24 | Needs review |
+| [vannhon1603/note](https://github.com/vannhon1603/note) | No description supplied | 2026-10-24 | Needs review |
 <!-- ALL-REA:DISCOVERED:END -->
 
 ## Applications and practical software
